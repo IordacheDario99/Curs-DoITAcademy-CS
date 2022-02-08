@@ -26,6 +26,32 @@ namespace Curs1
             Console.WriteLine("var_a = " + var_a);
             var_c *= var_a;
             Console.WriteLine("var_c = " + var_c);
+
+            var p1 = new Program();
+            p1.Proiect2();
+        }
+
+        public void Proiect2()
+        {
+            Console.WriteLine("\n\nCurs C# - Proiectul 3");
+            short var_a, var_b, var_c;
+            var_a = short.Parse(Console.ReadLine()); //bette DRY
+            var_b = short.Parse(Console.ReadLine());
+            Console.WriteLine(var_b.GetType());
+            var_c = short.Parse(Console.ReadLine());
+            var var_sum = Convert.ToInt16(var_c + var_b + var_a); // after summing the resulted value is sotred as an integer for the sake of performance
+                                                                  // https://stackoverflow.com/questions/941584/byte-byte-int-why
+
+            Console.WriteLine("var_a + var_b + var_c = " + var_sum + " " + var_sum.GetType() + " " + Convert.ToInt16(var_a + var_b + var_c));
+            Console.WriteLine("var_a * var_b = " + var_a * var_b);
+            Console.WriteLine("var_c / var_a = " + var_c / var_a);
+            Console.WriteLine("var_a % var_b = " + var_a % var_b);
+            Console.WriteLine("var_a new value is: " + var_a);
+
+            bool var_d = var_a > 0 && var_b > 0 && var_c > 0;
+            Console.WriteLine("var_d = " + var_d);
+
+
         }
     }
 }
