@@ -1,6 +1,7 @@
 ﻿using System;
 
 
+
 namespace Curs1
 {
     internal class Program
@@ -28,7 +29,8 @@ namespace Curs1
             Console.WriteLine("var_c = " + var_c);
 
             var p1 = new Program();
-            p1.Proiect2();
+            //p1.Proiect2();
+            p1.Proiect3();
         }
 
         public void Proiect2()
@@ -52,6 +54,37 @@ namespace Curs1
             Console.WriteLine("var_d = " + var_d);
 
 
+        }
+
+        public void Proiect3()
+        {
+            Console.WriteLine("\n\nCurs C# - Optional Proiect 3");
+            float l_patrat, a_patrat, p_patrat;
+            float d_cerc, r_cerc, l_cerc, a_cerc;
+            float r_sfera, a_sfera, v_sfera;
+            Console.Write("Introduceti latura patratului: ");
+
+            l_patrat = Convert.ToSingle(Console.ReadLine());
+            p_patrat = l_patrat * 4;
+            a_patrat = Convert.ToSingle(Math.Pow(l_patrat, 2));
+
+            Console.WriteLine("Perimetrul patratului este: " + p_patrat);
+            Console.WriteLine("Aria patratului este: " + a_patrat);
+
+            Console.Write("Introduceti diamentrul cercului: ");
+
+            d_cerc = Convert.ToSingle(Console.ReadLine());
+            r_cerc = d_cerc / 2;
+            l_cerc = Convert.ToSingle(2 * Math.PI * r_cerc);
+            a_cerc = Convert.ToSingle(Math.PI * Math.Pow(r_cerc, 2));
+            Console.WriteLine($"Aria cercului este {a_cerc} iar lungimea acestuia este {l_cerc}");
+
+            Console.Write("Introduceti raza sferei: ");
+
+            r_sfera = Convert.ToSingle(Console.ReadLine());
+            a_sfera = Convert.ToSingle(4 * Math.PI * Math.Pow(r_sfera, 2));
+            v_sfera = Convert.ToSingle((4 * Math.PI * Math.Pow(r_sfera, 3)) / 3);
+            Console.WriteLine($"Aria sferei este {a_sfera} iar vlumul acesteia este {v_sfera}");
         }
     }
 }
