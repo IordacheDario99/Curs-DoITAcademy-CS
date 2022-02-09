@@ -30,7 +30,8 @@ namespace Curs1
 
             var p1 = new Program();
             //p1.Proiect2();
-            p1.Proiect3();
+            //p1.Proiect3();
+            p1.Proiect5();
         }
 
         public void Proiect2()
@@ -85,6 +86,20 @@ namespace Curs1
             a_sfera = Convert.ToSingle(4 * Math.PI * Math.Pow(r_sfera, 2));
             v_sfera = Convert.ToSingle((4 * Math.PI * Math.Pow(r_sfera, 3)) / 3);
             Console.WriteLine($"Aria sferei este {a_sfera} iar vlumul acesteia este {v_sfera}");
+        }
+
+        public void Proiect5()
+        {
+            int var_a, var_b, temp;
+            Console.WriteLine("Introduceti cele doua valori a si b:");
+            var_a = Convert.ToInt32(Console.ReadLine());
+            var_b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Valori a si b inainte de interschimbare: a = {var_a} | b = {var_b}");
+            temp = var_a;
+            var_a = var_b;
+            var_b = temp;
+            Console.WriteLine($"Valori a si b dupa de interschimbare: a = {var_a} | b = {var_b}");
+
         }
     }
 }
