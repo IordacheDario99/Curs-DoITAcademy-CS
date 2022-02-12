@@ -31,7 +31,9 @@ namespace Curs1
             var p1 = new Program();
             //p1.Proiect2();
             //p1.Proiect3();
-            p1.Proiect5();
+            p1.Proiect4();
+            //p1.Proiect5();
+            //p1.Proiect6();
         }
 
         public void Proiect2()
@@ -88,8 +90,18 @@ namespace Curs1
             Console.WriteLine($"Aria sferei este {a_sfera} iar vlumul acesteia este {v_sfera}");
         }
 
+        public void Proiect4()
+        {
+            Console.WriteLine("\n\nCurs C# - Optional Proiect 4");
+            int var_a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Descompunerea numarului {var_a} este: {(var_a / 10000) % 10} * 10000 + " +
+                $"{(var_a / 1000) % 10} * 1000 + {(var_a / 100) % 10} * 100 + {(var_a / 10) % 10} * 10 +" +
+                $"{var_a % 10} * 1 ");
+        }
+
         public void Proiect5()
         {
+            Console.WriteLine("\n\nCurs C# - Optional Proiect 5");
             int var_a, var_b, temp;
             Console.WriteLine("Introduceti cele doua valori a si b:");
             var_a = Convert.ToInt32(Console.ReadLine());
@@ -100,6 +112,27 @@ namespace Curs1
             var_b = temp;
             Console.WriteLine($"Valori a si b dupa de interschimbare: a = {var_a} | b = {var_b}");
 
+        }
+
+        public void Proiect6()
+        {
+            Console.WriteLine("\n\nCurs C# - Optional Proiect 6");
+            int var_a = Convert.ToInt32(Console.ReadLine());
+            /*for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{var_a} x {i} = {var_a * i}");
+            }*/
+
+            Console.WriteLine($"{var_a} x 1 = {var_a * 1}");
+            Console.WriteLine($"{var_a} x 2 = {var_a * 2}");
+            Console.WriteLine($"{var_a} x 3 = {var_a * 3}");
+            Console.WriteLine($"{var_a} x 4 = {var_a * 4}");
+            Console.WriteLine($"{var_a} x 5 = {var_a * 5}");
+            Console.WriteLine($"{var_a} x 6 = {var_a * 6}");
+            Console.WriteLine($"{var_a} x 7 = {var_a * 7}");
+            Console.WriteLine($"{var_a} x 8 = {var_a * 8}");
+            Console.WriteLine($"{var_a} x 9 = {var_a * 9}");
+            Console.WriteLine($"{var_a} x 10 = {var_a * 10}");
         }
     }
 }
