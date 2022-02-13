@@ -9,7 +9,7 @@ namespace Curs2
         static void Main(string[] args)
         {
             var p1 = new Program();
-            p1.ProiectFlow8();
+            p1.ProiectFlow4();
             //tema din curs exercitiul cu switch
         }
 
@@ -197,7 +197,7 @@ namespace Curs2
             Console.Write("Introduceti exponentul: ");
             var_exp = Convert.ToInt32(Console.ReadLine());
             var_pow = var_baz;
-            for (int i = 1; i <= var_exp; i++)
+            for (int i = 1; i < var_exp; i++)
             {
                 var_pow *= var_baz;
             }
