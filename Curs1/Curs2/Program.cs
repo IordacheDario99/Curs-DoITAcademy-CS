@@ -9,7 +9,7 @@ namespace Curs2
         static void Main(string[] args)
         {
             var p1 = new Program();
-            p1.ProiectFlow4();
+            p1.ProiectFlow9();
             //tema din curs exercitiul cu switch
         }
 
@@ -272,6 +272,31 @@ namespace Curs2
                 Console.WriteLine();
 
             }
+        }
+        void ProiectFlow9()
+        {
+            Console.WriteLine("PROIECT FLOW_8 Suplimentar \nIntroduceti un numar: ");
+            int var_n, var_a = 1, var_b = 0;
+            var_n = Convert.ToInt32(Console.ReadLine());
+            int var_fibonacci = 0;
+
+            Console.Write(var_a + var_b + ", ");
+            for (int i = 0; i <= var_n - 2; ++i)
+            {
+                var_fibonacci = var_b + var_a;
+                if (i != var_n - 2)
+                {
+                    Console.Write(var_fibonacci + ", ");
+                }
+                else
+                {
+                    Console.WriteLine(var_fibonacci);
+                }
+                var_b = var_a;
+                var_a = var_fibonacci;
+            }
+
+
         }
     }
 }
