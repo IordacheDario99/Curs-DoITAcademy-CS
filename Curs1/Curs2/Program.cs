@@ -9,7 +9,8 @@ namespace Curs2
         static void Main(string[] args)
         {
             var p1 = new Program();
-            p1.ProiectFlow9();
+
+            p1.ProiectFlow10();
             //tema din curs exercitiul cu switch
         }
 
@@ -297,6 +298,159 @@ namespace Curs2
             }
 
 
+        }
+        void ProiectFlow10()
+        {
+            Console.WriteLine("PROIECT FLOW_10 Suplimentar \nIntroduceti un numar: ");
+            int var_arabic = 1, var_temp;
+            string var_roman;
+
+            var_arabic = Convert.ToInt32(Console.ReadLine());
+            int mirroredNumber = Convert.ToInt32(MirrorMyNumber(var_arabic));
+
+            if (var_arabic < 4000)
+            {
+                for (int i = 0; i <= 3; i++)
+                {
+                    switch (mirroredNumber)
+                    {
+                        case >= 1000:
+                            var_temp = mirroredNumber % 10;
+                            while (var_temp > 0)
+                            {
+                                Console.Write("M");
+                                var_temp--;
+                            }
+                            mirroredNumber = Convert.ToInt32(MirrorMyNumber(mirroredNumber / 10));
+                            break;
+                        case >= 900:
+                            Console.Write("CM");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 800:
+                            Console.Write("DCCC");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 700:
+                            Console.Write("DCC");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 600:
+                            Console.Write("DC");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 500:
+                            Console.Write("D");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 400:
+                            Console.Write("CD");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 300:
+                            Console.Write("CCC");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 200:
+                            Console.Write("CC");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 100:
+                            Console.Write("C");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 90:
+                            Console.Write("XC");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 80:
+                            Console.Write("LXXX");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 70:
+                            Console.Write("LXX");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 60:
+                            Console.Write("LX");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 50:
+                            Console.Write("L");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 40:
+                            Console.Write("XL");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 30:
+                            Console.Write("XXX"); //UwU
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 20:
+                            Console.Write("XX");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 10:
+                            Console.Write("x");
+                            mirroredNumber /= 10;
+                            break;
+                        case >= 9:
+                            Console.Write("IX");
+                            //mirroredNumber % 10 - 5
+                            break;
+                        case >= 8:
+                            Console.Write("VIII");
+                            //mirroredNumber % 10 - 5
+                            break;
+                        case >= 7:
+                            Console.Write("VII");
+                            //mirroredNumber % 10 - 5
+                            break;
+                        case >= 6:
+                            Console.Write("VI");
+                            //mirroredNumber % 10 - 5
+                            break;
+                        case >= 5:
+                            Console.Write("V");
+                            //mirroredNumber % 10 - 5
+                            break;
+                        case >= 4:
+                            Console.Write("IV");
+                            //mirroredNumber % 10 - 5
+                            break;
+                        case >= 3:
+                            Console.Write("III");
+                            //mirroredNumber % 10 - 5
+                            break;
+                        case >= 2:
+                            Console.Write("II");
+                            //mirroredNumber % 10 - 5
+                            break;
+                        case >= 1:
+                            Console.Write("I");
+                            //mirroredNumber % 10 - 5
+                            break;
+                        default:
+                            Console.Write("Something went wrong");
+                            break;
+
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Numarul trebuie sa fie cuprins intre 0 si 3999!");
+            }
+        }
+        string MirrorMyNumber(int number)
+        {
+            string numbers = " ";
+            for (int i = number; i > 0; i /= 10)
+            {
+                numbers += (i % 10).ToString();
+            }
+            return numbers;
         }
     }
 }
