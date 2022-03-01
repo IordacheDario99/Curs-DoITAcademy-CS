@@ -14,13 +14,25 @@ namespace Curs3
         private string cnp;
         private bool esteBarbat;
         public string adresa;
+
+        public Persoana()
+        {
+
+        }
+        public Persoana(string nume, string prenume, int varsta)
+        {
+            this.Nume = nume;
+            this.Varsta = varsta;
+            this.Prenume = prenume;
+
+        }
         public int getVarsta { get { return varsta; } }
 
         public string Nume { get; set; }
         public string Prenume { get; set; }
         public int Varsta { get; set; }
 
-        public string Cnp
+        protected string Cnp
         {
             get { return cnp; }
             set { cnp = value; }
@@ -31,8 +43,8 @@ namespace Curs3
             set { esteBarbat = value; }
         }
 
-        
-        
+
+
 
         /*public void SetNume(string nume)
         {
@@ -82,7 +94,7 @@ namespace Curs3
         public void SetNumeSiPrenume(string nume, string prenume)
         {
             Nume = nume;
-            Prenume= prenume;
+            Prenume = prenume;
 
         }
         public void PrintNumeComplet()

@@ -9,7 +9,7 @@ namespace Curs3
         //enum este o colectie de constante de tip int (strict int)        
         static void Main(string[] args)
         {
-            Elev Andrei = new Elev();
+            /*Elev Andrei = new Elev();
             Student Dario = new Student();
             Student Alin = new Student();
             Persoana p1 = new Persoana();
@@ -30,7 +30,20 @@ namespace Curs3
             pers1.Prenume = "Cursant";
             pers1.Nume = "DoItAcademy";
 
+            Persoana pers = new Persoana("Numea", "Prenume", 22);
+            int i = 21;
+            
+            */
 
+            ConvertorValutar converotr = new ConvertorValutar();
+            double rezultat = converotr.ConvertEuroToRon(100);
+            Console.WriteLine(rezultat);
+            ConvetroTemperatura.KelvinToCelsius(214);
+            ConvetroTemperatura.ConvertCelsiusToKelvin(32);
+            ConvetroTemperatura.ConvertCelsiusToFahrenheit(32);
+            Console.WriteLine(ConvetroTemperatura.KelvinToCelsius(214) + " " +
+                            ConvetroTemperatura.ConvertCelsiusToKelvin(32) + " " +
+                            ConvetroTemperatura.ConvertCelsiusToFahrenheit(32));
         }
     }
 
