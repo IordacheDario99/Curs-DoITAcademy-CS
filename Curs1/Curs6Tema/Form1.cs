@@ -61,7 +61,7 @@ namespace Curs6Tema
             Category fresh = new Category("Fresh Juice", "Freshly squized fruit juice");
             Category smoothie = new Category("Smoothie", "Fruit puree with milk or icecream");
             Category sweets = new Category("Sweets", "Something that goes along with the coffee");
-            Category sandwiches = new Category("Sandwiches", "For the hungry ones");
+            Category sandwiches = new Category("ASandwiches", "For the hungry ones");
 
             Products v60 = new Products("V60", "A pour over coffee that brings flavour to the next" +
                 "level", 16, coffee);
@@ -83,6 +83,7 @@ namespace Curs6Tema
 
         private void Form1_Shown(object sender, EventArgs e)
         {
+            _coffeshop.Category.Sort((p, q) => p.Name.CompareTo(q.Name));
 
             foreach (Category cat in _coffeshop.Category)
             {
@@ -115,6 +116,21 @@ namespace Curs6Tema
             ProductsPage prodPageForm = new ProductsPage(selectedItem, _coffeshop);
             prodPageForm.Show();
             
+
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void categoryListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
