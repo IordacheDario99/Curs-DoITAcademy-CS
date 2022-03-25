@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs7", "Curs7\Curs7.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs8", "Curs8\Curs8.csproj", "{C17F5D8D-2CEF-4E81-90A0-26CE6934D7EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iRecycle", "iRecycle\iRecycle.csproj", "{084F7495-CEFC-43A6-8D47-DAA952878095}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{C17F5D8D-2CEF-4E81-90A0-26CE6934D7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C17F5D8D-2CEF-4E81-90A0-26CE6934D7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C17F5D8D-2CEF-4E81-90A0-26CE6934D7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{084F7495-CEFC-43A6-8D47-DAA952878095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084F7495-CEFC-43A6-8D47-DAA952878095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084F7495-CEFC-43A6-8D47-DAA952878095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084F7495-CEFC-43A6-8D47-DAA952878095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
